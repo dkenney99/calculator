@@ -46,4 +46,9 @@ button {
   border: solid black 2px;
   border-radius: 10px;
   font-size: 20px;
+  -webkit-filter: brightness(100%);
+}
+
+button:hover {
+  -webkit-filter: brightness(70%);
 }
