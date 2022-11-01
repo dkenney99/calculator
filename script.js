@@ -196,6 +196,9 @@ equals.addEventListener("click", () => {
     grabFirstValue = total.toString();
     grabSecondValue = "";
   } else if (operator == "/") {
+    if (grabSecondValue == 0) {
+      return alert("Dividing by zero will break calculator!!");
+    }
     total = Math.round(divide(grabFirstValue, grabSecondValue));
     display.textContent = total;
     grabFirstValue = total.toString();
