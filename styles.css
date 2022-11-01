@@ -6,7 +6,7 @@ body {
   align-items: center;
 }
 .calculator-frame {
-  background-color: rgba(13, 13, 230, 0.699);
+  background-color: rgba(13, 13, 230, 0.856);
   border: solid black 3px;
   height: 500px;
   width: 400px;
@@ -17,21 +17,25 @@ body {
 .result-window {
   background-color: rgb(255, 255, 188);
   margin: 10px auto;
-  height: 85px;
+  height: 100px;
   width: 350px;
   border: solid black 2px;
   border-radius: 5px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 60px;
 }
+
 #clear {
-  height: 50px;
   background-color: rgba(255, 0, 0, 0.815);
 }
 
 .buttons-grid {
   margin: 10px auto;
   width: 350px;
-  height: 375px;
+  height: 350px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
